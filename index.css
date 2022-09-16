@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+img {
+width: 100%;
+height: 100%;
+display: block;
+}
+.box {
+    position: relative;
+    width: 800px;
+    height: 750px;
+    margin: 0 auto;
+}
+
+.box-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background: url('./image/diqiu.jfif') no-repeat;
+    background-size: cover ;
+    animation: turn 10s infinite linear;
+}
+
+@keyframes turn {
+    from {
+        transform: rotateZ(0);
+    }
+
+    to {
+        transform: rotateZ(1turn);
+    }
+}
+
+.head-portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 275px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.head-portrait-img {
+    width: 200px;
+    height: 200px;
+    background: url('./image/huaji.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+.text-and-arrowhead {
+    position: absolute;
+    top: 475px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+.name {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.down-triangular {
+    width: 100px;
+    height: 100px;
+    margin:30px auto 0px;
+}
