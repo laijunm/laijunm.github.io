@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/./font-awesome-4.7.0/css/font-awesome.min.css">
     <style>
         body {
             margin: 0;
@@ -28,7 +29,7 @@
 
         .box-cover {
             position: absolute;
-            top: 0;
+            top: 100px;
             left: 0;
             right: 0;
             bottom: 0;
@@ -93,9 +94,28 @@
         }
 
         .down-triangular {
-            width: 100px;
-            height: 100px;
-            margin: 30px auto 0px;
+            color: #fff;
+            font-size: 30px;
+            position: absolute;
+            top: 0;
+            left: calc(50% - 28px / 2);
+            margin: auto;
+            animation: upDown 2s infinite linear;
+        }
+
+        @keyframes upDown {
+            from {
+                top: 70%;
+
+            }
+
+            50% {
+                top:40%;
+            }
+
+            to {
+                top: 70%;
+            }
         }
     </style>
 
@@ -111,7 +131,7 @@
         <div class="text-and-arrowhead">
             <div class="name">路人甲</div>
             <div class="down-triangular">
-
+                <i class="fa fa-arrow-down" aria-hidden="true"></i> 
             </div>
         </div>
     </div>
